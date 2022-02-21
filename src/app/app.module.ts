@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
+
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -24,6 +25,7 @@ import { ShippingComponent } from './shipping/shipping.component';
       { path: 'shipping', component: ShippingComponent}
     ], { useHash: true })
   ],
+
   declarations: [
     AppComponent,
     TopBarComponent,
@@ -33,8 +35,10 @@ import { ShippingComponent } from './shipping/shipping.component';
     CartComponent,
     ShippingComponent
   ],
+
   bootstrap: [
     AppComponent
   ]
 })
+
 export class AppModule { }

@@ -5,6 +5,7 @@ import { Product } from './products';
 @Injectable({
   providedIn: 'root'
 })
+
 export class CartService {
   items: Product[] = [];
 
@@ -25,9 +26,7 @@ export class CartService {
     return this.items;
   }
 
-
   getShippingPrices() {
     return this.http.get<{type: string, price: number}[]>('/assets/shipping.json');
   }
-
 }
